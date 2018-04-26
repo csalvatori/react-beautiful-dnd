@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/atlassian/react-beautiful-dnd/issues"
   },
-  "main": "dist/react-beautiful-dnd.js.min",
+  "main": "dist/react-beautiful-dnd.min.js",
   "module": "dist/react-beautiful-dnd.esm.js",
   "sideEffects": false,
   "files": [
