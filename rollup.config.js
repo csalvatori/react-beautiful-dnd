@@ -71,15 +71,15 @@ export default [
   // CommonJS (cjs) build
   // - Keeping console.log statements
   // - All external packages are not bundled
-  {
-    input,
-    output: { file: pkg.main, format: 'cjs' },
-    external: excludeAllExternals,
-    plugins: [
-      resolve({ extensions }),
-      babel(getBabelOptions()),
-    ],
-  },
+  // {
+  //   input,
+  //   output: { file: pkg.main, format: 'cjs' },
+  //   external: excludeAllExternals,
+  //   plugins: [
+  //     resolve({ extensions }),
+  //     babel(getBabelOptions()),
+  //   ],
+  // },
   // EcmaScript Module (esm) build
   // - Keeping console.log statements
   // - All external packages are not bundled
@@ -89,8 +89,7 @@ export default [
     external: excludeAllExternals,
     plugins: [
       resolve({ extensions }),
-      babel(getBabelOptions()),
-      sizeSnapshot({ updateSnapshot: !shouldCheckSnapshot }),
+      babel(getBabelOptions())
     ],
   },
 ];

@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/atlassian/react-beautiful-dnd/issues"
   },
-  "main": "dist/react-beautiful-dnd.cjs.js",
+  "main": "dist/react-beautiful-dnd.js.min",
   "module": "dist/react-beautiful-dnd.esm.js",
   "sideEffects": false,
   "files": [
@@ -34,7 +34,7 @@
     "build": "yarn build:clean && yarn build:dist && yarn build:flow",
     "build:clean": "rimraf dist",
     "build:dist": "rollup -c",
-    "build:flow": "echo \"// @flow\n\nexport * from '../src';\" > dist/react-beautiful-dnd.cjs.js.flow",
+    "build:flow": "echo \"// @flow\n\nexport * from '../src';\" > dist/react-beautiful-dnd.cjs.js.flow && exit 1",
     "storybook": "start-storybook -p 9002",
     "build-storybook": "build-storybook -c .storybook -o site",
     "website:start": "cd website && yarn develop",

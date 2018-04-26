@@ -115,7 +115,7 @@ const move = ({
   };
 
   const newImpact: DragImpact = (impact || getDragImpact({
-    pageCenter: page.center,
+    pageCenter: page.selection,
     draggable: state.dimension.draggable[initial.descriptor.id],
     draggables: state.dimension.draggable,
     droppables: state.dimension.droppable,
